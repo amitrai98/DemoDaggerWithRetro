@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout>
+    <data>
+        <variable name="tutorialVm"
+            type="com.evontech.demo.demodagger.mvvm.screens.demo_list.tutoriallist.TutorialListVm">
+
+        </variable>
+    </data>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mvvm.screens.demo_list.TutorialActivity">
+    android:background="@color/list_bg"
+    tools:context=".mvvm.screens.demo_list.tutoriallist.TutorialActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tutorial_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </android.support.constraint.ConstraintLayout>
+
+</layout>

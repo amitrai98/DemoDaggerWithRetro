@@ -13,6 +13,7 @@ import com.evontech.demo.demodagger.BR;
 import com.evontech.demo.demodagger.mvvm.modals.LoginModal;
 import com.evontech.demo.demodagger.mvvm.screens.demo_list.rxexample.RxActivity;
 import com.evontech.demo.demodagger.mvvm.screens.demo_list.rxexample.RxVm;
+import com.evontech.demo.demodagger.mvvm.screens.demo_list.tutoriallist.TutorialActivity;
 
 public class LoginViewModal extends BaseObservable{
 
@@ -109,7 +110,7 @@ public class LoginViewModal extends BaseObservable{
         Log.e(TAG, "username is  "+password);
         Log.e(TAG, "password is  "+username);
 
-        activity.startActivity(new Intent(activity, RxActivity.class));
+        activity.startActivity(new Intent(activity, TutorialActivity.class));
 
 //        navigator.login();
 
