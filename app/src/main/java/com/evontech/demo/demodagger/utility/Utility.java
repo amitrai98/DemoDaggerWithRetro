@@ -1,4 +1,4 @@
-package com.evontech.demo.demodagger;
+package com.evontech.demo.demodagger.utility;
 
 import dagger.Component;
 import dagger.Module;

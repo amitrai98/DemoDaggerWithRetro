@@ -2,9 +2,13 @@ package com.evontech.demo.demodagger;
 
 import android.app.Application;
 
-public class demodagger extends Application {
+import com.evontech.demo.demodagger.dagger.components.DaggerMyAppComponent;
+import com.evontech.demo.demodagger.dagger.components.MyAppComponent;
+import com.evontech.demo.demodagger.dagger.modules.MyAppModule;
+
+public class AppInitials extends Application {
     static MyAppComponent component;
-    static demodagger context;
+    static AppInitials context;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -27,7 +31,7 @@ public class demodagger extends Application {
      *
      * @return the app initials
      */
-    public static demodagger getContext(){
+    public static AppInitials getContext(){
         return  context;
     }
 }
